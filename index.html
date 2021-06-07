@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark " id="navigation">
+        <a class="navbar-brand" href="#"><i class="fa fa-music"></i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav" align="right">
+            <a class="nav-item nav-link" href="#" id="home">Home 
+            <a class="nav-item nav-link" id="instructions" onclick="display_Instructions()">Instructions</a>
+            <a class="nav-item nav-link" id="about" onclick="display_aboutUs()">About Us</a>
+        </div>
+        </div> 
+            <div class="social text-gray">
+                <a href="https://www.twitter.com" class='twitter'><i class="fa fa-twitter"></i></a>
+                <a href="https://www.linkedin.com" class='linkedin'><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.facebook.com" class='Facebook'><i class="fa fa-facebook"></i></a>
+                <a href="https://www.youtube.com" class='Youtube'><i class="fa fa-youtube"></i></a>
+            </div>
+        </div>
+    </nav>
+    
+    <div>
+    <div class="row" id="outer-top-cover">
+        <div class="row" id="note_info" align="center">
+            <div class="col">
+                <div id="last_note"></div>
+            </div>
+        </div>
+    </div>
+    <div class="row sm-4" id="Keyboard">
+        <div class="col" id="left_end"></div>
+        <div class="col" id="C_col">
+            <button class="button-light"  onclick="playSound(this.id)" id="C"><br><br>C</button>
+        </div>
+            <button class="button-dark"  onclick="playSound(this.id)" id="Cs">C#<br>(Db)</button>   
+        <div class="col" id="C_col">
+            <button class="button-light"  onclick="playSound(this.id)" id="D"><br><br>D</button>
+        </div class="col" id="C_col"> 
+        <button class="button-dark"  onclick="playSound(this.id)" id="Ds">D#<br>(Eb)</button>
+        <div class="col" id="E_col">
+            <button class="button-light"  onclick="playSound(this.id)" id="E"><br><br>E</button>
+        </div>
+        <div class="col" id="F_col">
+            <button class="button-light"  onclick="playSound(this.id)" id="F"><br><br>F</button>
+        </div>  
+        <button class="button-dark"  onclick="playSound(this.id)" id="Fs">F#<br>(Gb)</button>
+        <div class="col" id="G_col">
+            <button class="button-light"  onclick="playSound(this.id)" id="G"><br><br>G</button>
+        </div>
+        
+        <button class="button-dark"  onclick="playSound(this.id)" id="Gs">G#<br>(Ab)</button>
+        <div class="col" id="A_col">
+            <button class="button-light"  onclick="playSound(this.id)" id="A"><br><br>A</button>
+        </div>
+        
+        <button class="button-dark"  onclick="playSound(this.id)" id="As">A#<br>(Bb)</button>
+        <div class="col" id="B_col">
+            <button class="button-light"  onclick="playSound(this.id)" id="B"><br><br>B</button>
+        </div>
+        <div class="col" id="C6_col">
+            <button class="button-light"  onclick="playSound(this.id)" id="C6"><br><br>C6</button>
+        </div>
+        <div class="col" id="right_end"></div>
+    </div>
+</div>
+    <div class="row" id="color_settings" align="center">
+        <div class="col">
+            <button class="btn" onclick="change_color()">Change Color</button>
+        </div>
+        
+        <div class="col">
+            <button class="btn" onclick="reset_color()">Reset Color</button>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="copyright" align="center">
+          &copy;Copyrights<strong> Piano Minor Project</strong> . All Rights Reserved.<br>Designed by Vikhyat Vinod Kumar
+        </div>
+    </footer>
+    <script src="intro.js"></script>
+</body>
+</html>

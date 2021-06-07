@@ -1,0 +1,137 @@
+body {
+    background-color: rgb(156, 30, 30);
+    background: url(piano3.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
+  
+  h1 {
+    color: blanchedalmond;
+  }
+  
+  .row{
+    width: 65rem;
+    height: 20rem;
+  }
+  .col{
+    padding: 0px!important;
+    width: 5rem;
+  }
+  .button-light {
+    background-color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    position: absolute;
+    width: 7rem;
+    height: 20rem;
+    border:1px solid rgb(17, 17, 17);
+    border-radius: 0px 0px 10px 10px;
+    padding: 0px;
+    margin: 0 2rem 0 0;
+    /* border-radius: 10px; */
+    -webkit-box-shadow: 10px 5px 5px #705f5f;
+            box-shadow: 10px 5px 5px #705f5f;
+  }
+  .button-light:hover{
+    background-color: rgb(230, 213, 213)!important;
+    box-shadow : 5px 5px black!important;
+    z-index: 1!important;
+    cursor: pointer;
+  }
+  .button-light:active{
+    background:rgb(172, 172, 161);
+}
+#E_col{
+  margin-right: .6rem;
+}
+#F_col,#B_col{
+  margin-right: .8rem;
+}
+#C6_col{
+  margin-left: -.2rem;
+}
+  .button-dark {
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    color: white;
+    z-index: 2;
+    margin: 0 -1.5rem 0 0 ;
+    height: 10rem;
+    border:1px solid black;
+    border-radius: 0 0 10 px 10px;
+    -webkit-box-shadow: 10px 5px 5px #705f5f;
+            box-shadow: 10px 5px 5px #705f5f; 
+  }
+  .button-dark:hover{
+    background-color: rgb(12, 12, 12)!important;
+    box-shadow : 5px 5px rgb(255, 255, 255)!important;
+    z-index: 1!important;
+    cursor: pointer;
+    cursor: pointer;
+  }
+  
+  #keyboard div{
+    padding: 0px!important;
+    margin: 0px;
+    height: 20rem;
+  }
+  #Keyboard{
+    margin: auto;
+    margin-top: 4.5rem;
+
+  }
+  #C{
+    border-radius: 0px 0px 10px 0px ;
+  }
+  #C6{
+    border-radius: 0px 0px 0px 10px ;
+  }
+  #F , #C6{
+    margin-left: 0.75rem;
+  }
+  #top-section{
+    margin-left: 2rem;
+  }
+  .copyright{
+    background-color: black;
+  }
+  #footer{
+    color: rgb(255, 255, 255);
+    align-self: center;
+}
+#color_settings{
+  margin:auto;
+  margin-top: 4rem; 
+  height: 4rem;
+}
+#note_info
+{
+  height: 1rem;
+  margin: auto;
+  margin-top: 3rem;
+}
+#last_note{
+  width:auto;
+  height: 1rem;
+  font-size: 3rem;
+  color: white;
+}
+#left_end, #right_end{
+  width: 9rem;
+  height: 20rem;
+  background-color: #000000;
+}
+#right_end{
+  margin-left: 2rem;
+}
+
+#outer-top-cover{
+  width: 65rem;
+  height: 10rem;
+  margin:auto;
+  margin-bottom: -4.5rem;
+  margin-top: 2rem;
+  border-radius: 8rem 8rem 0 0 ;
+  background-color: #000000;
+}
